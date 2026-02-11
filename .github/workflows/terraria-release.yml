@@ -27,7 +27,7 @@ jobs:
 
   publish-release:
     needs: process
-    uses: PassiveLemon/terraria-docker/.github/workflows/terraria-publish.yml@master
+    uses: john35588/terraria-docker/.github/workflows/terraria-publish.yml@master
     secrets: inherit
     with:
       version: ${{ needs.process.outputs.latest_terraria }}
